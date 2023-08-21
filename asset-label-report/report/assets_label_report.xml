@@ -1,0 +1,16 @@
+<odoo>
+    <data>
+        <template id="asset_label">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <div class="page">
+                        <div>
+                            <p><strong>Naziv:</strong> <span t-field="o.name"/></p>
+                            <p><strong>Broj osnovnog sredstva:</strong> <span t-field="o.broj_osn_sred"/></p>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>

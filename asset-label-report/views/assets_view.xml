@@ -1,0 +1,15 @@
+<odoo>
+    <data>
+        <record id="assets_label_report" model="ir.actions.report">
+            <field name="name">Naljepnica imovine</field>
+            <field name="model">account.asset</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">asset-label-report.asset_label</field>
+            <field name="report_file">asset-label-report.asset_label</field>
+            <field name="binding_model_id" ref="account_asset.model_account_asset"/>
+            <field name="binding_type">report</field>
+        </record>
+    </data>
+
+
+</odoo>
